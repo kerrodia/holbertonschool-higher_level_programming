@@ -1,6 +1,20 @@
+#!/usr/bin/python3
+"""
+This is the square size def
+"""
+
+
 class Square:
+    """
+    Square class with private instance attribute size
+    """
+
     def __init__(self, size=0):
-        if not isinstance(size, int):
+        """
+        Args:
+            size of the of the square
+        """
+        if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
